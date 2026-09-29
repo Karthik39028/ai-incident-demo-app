@@ -1,0 +1,9 @@
+# Netlify production configuration (healthy state)
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+# Optional: environment variables can be added here
+[context.production.environment]
+  NODE_ENV = "production"

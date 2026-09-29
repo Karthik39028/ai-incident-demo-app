@@ -1,0 +1,8 @@
+# Netlify configuration for broken state (incorrect publish directory)
+[build]
+  command = "npm run build"
+  publish = "public"  # <-- wrong directory, should be "dist"
+  functions = "netlify/functions"
+
+[context.production.environment]
+  NODE_ENV = "production"
